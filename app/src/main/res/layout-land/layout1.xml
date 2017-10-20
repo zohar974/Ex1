@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.madaim.ex1.MainActivity">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="3dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="100dp"
+        android:layout_weight="1"
+        android:background="@android:color/holo_blue_light" />
+
+    <TextView
+        android:id="@+id/tvIntro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/intro" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/tvIntro"
+        android:id="@+id/llName">
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:layout_alignBottom="@+id/editText"
+            android:layout_alignParentStart="true"
+            android:layout_weight="1"
+            android:text="@string/userName" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+
+
+            android:inputType="textPersonName"
+            android:text="" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editText"
+            android:layout_toEndOf="@+id/editText"
+            android:layout_weight="1"
+            android:text="@string/button" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/llChecks"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        android:layout_below="@id/llName">
+
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="248dp"
+            android:layout_height="wrap_content"
+            android:text="@string/Option1" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="248dp"
+            android:layout_height="wrap_content"
+            android:text="@string/Option2" />
+
+        <CheckBox
+            android:id="@+id/checkBox3"
+            android:layout_width="245dp"
+            android:layout_height="wrap_content"
+            android:text="@string/Option3" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/llChecks"
+        android:layout_alignParentStart="true">
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llChecks"
+        android:layout_toEndOf="@+id/llName"
+        android:id="@+id/radioGroup">
+
+    </RadioGroup>
+
+    <RadioButton
+        android:id="@+id/radioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/Alternative2"
+        android:layout_below="@+id/radioButton2"
+        android:layout_toEndOf="@+id/radioGroup" />
+
+    <RadioButton
+        android:id="@+id/radioButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/Alternative1"
+        android:layout_alignTop="@+id/llChecks"
+        android:layout_toEndOf="@+id/llName" />
+
+
+</RelativeLayout>

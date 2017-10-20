@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Ex1</string>
+    <string name="intro">this activity demonstrates the use of Relative Layout with two intrenal Linear layouts</string>
+    <string name="userName">Your Name: </string>
+    <string name="Option1">option1</string>
+    <string name="Option2">option2</string>
+    <string name="Option3">option3</string>
+    <string name="Alternative1">alternative1</string>
+    <string name="Alternative2">alternative2</string>
+    <string name="button">Press me!</string>
+</resources>
